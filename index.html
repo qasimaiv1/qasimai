@@ -1,24 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Qasim AI - Pakistan Ka Pehla Offline AI</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qasim AI - Pakistan Ka Pehla Offline AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
-            background: #0d1117; 
-            color: white; 
-            font-family: Arial; 
-            text-align: center; 
-            padding: 50px; 
+            font-family: 'Poppins', sans-serif; 
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: #e6edf3; 
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
         }
-        h1 { color: #58a6ff; font-size: 2.5rem; }
-        .red { color: #ff7b72; }
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(22, 27, 34, 0.8);
+            border-radius: 20px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 40px rgba(88, 166, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        h1 { 
+            font-size: 3.5rem; 
+            font-weight: 800;
+            background: linear-gradient(45deg, #58a6ff, #79c0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .tagline { 
+            font-size: 1.5rem; 
+            color: #ff7b72; 
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        p { font-size: 1.1rem; color: #8b949e; margin-bottom: 15px; }
+        .btn-group { margin-top: 40px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            background: linear-gradient(45deg, #238636, #2ea043);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(46, 160, 67, 0.4); }
+        .btn-secondary { background: linear-gradient(45deg, #1f6feb, #58a6ff); }
+        .features { margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .feature { padding: 20px; background: rgba(13, 17, 23, 0.6); border-radius: 10px; }
+        .feature i { font-size: 2rem; color: #58a6ff; margin-bottom: 10px; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @media (max-width: 600px) { h1 { font-size: 2.5rem; } .tagline { font-size: 1.2rem; } }
     </style>
 </head>
 <body>
-    <h1>QASIM AI 🚀</h1>
-    <h2 class="red">Pakistan Ka Pehla Offline AI 100% Free</h2>
-    <p>Meri Website Live Ho Gayi!</p>
-    <p>GitHub Pages pe hosted</p>
+    <div class="container">
+        <div class="logo">🚀</div>
+        <h1>QASIM AI</h1>
+        <p class="tagline">Pakistan Ka Pehla Offline AI - 100% Free</p>
+        <p>Bina Internet Ke Chalay. Bina Limit Ke Chalay. Bilkul Free.</p>
+        
+        <div class="btn-group">
+            <a href="#" class="btn"><i class="fa-solid fa-download"></i> Download Karo</a>
+            <a href="https://github.com/qasimaiv1/qasimai" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fa-solid fa-wifi-slash"></i>
+                <h3>100% Offline</h3>
+                <p>Internet ki zaroorat nahi</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-infinity"></i>
+                <h3>No Limits</h3>
+                <p>Jitna marzi istemal karo</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Private & Secure</h3>
+                <p>Tera data tere paas</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
